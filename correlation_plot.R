@@ -44,6 +44,7 @@ formatted_cors <- function(df){
 }
 formatted_cors(LungCap_data) %>% head() %>% kable()
 
+#plotting
 formatted_cors(LungCap_data) %>%
   ggplot(aes(x = measure1, y = measure2, fill = r)) +
   geom_tile()
